@@ -21,8 +21,3 @@ Make sure to select appropriate OS and to perform all steps till
 The Blinky application was built and flashed on a Renesas EK-RA6B1 evaluation board.
 
 The required board support is currently available through an internal Renesas Zephyr BSP and is not included in this repository.
-
-Application-specific board configuration:
-
-```conf
-CONFIG_PM=n
