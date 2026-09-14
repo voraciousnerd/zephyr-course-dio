@@ -52,3 +52,27 @@ west build -t menuconfig
 # Execute code
 >   g
 ```
+---
+### Creating an Application Level Overlay
+* First, we create ```app.overlay``` where we add alias ```app-led``` pointing to my board's led0, which has the label ```user_led```
+```
+/ {
+	aliases {
+		app-led = &user_led;
+	};
+};
+```
+
+* We edit the Kconfig file with: ```int APP_HEARTBEAT_PERIOD_MS``` (default 500, range 100–2000). Then in C, we use ```DT_ALIAS(app_led)``` for the GPIO and ```CONFIG_APP_HEARTBEAT_PERIOD_MS``` for the sleep duration. 
+```
+config APP_HEARTBEAT_PERIOD_MS
+    int "Heartbeat Period (ms)"
+    range 100 2000
+    default 500
+    help
+      Delay in milliseconds between LED toggles.
+
+source "Kconfig.zephyr"
+```
+
+* Following the J-Link procedure above, we flash and verify by changing the period via menuconfig and observing the LED blink speed. It works!
