@@ -16,7 +16,21 @@ Make sure to select appropriate OS and to perform all steps till
 
 ---
 
-## Hardware validation
+## Hardware validation (Nucleo)
+
+The STM32 development board connects to the host PC via USB, using an ST-LINK V3 debugger to program and debug the microcontroller. OpenOCD communicates with the ST-LINK over USB, while the debugger accesses the STM32 through the Serial Wire Debug (SWD) interface using the SWCLK and SWDIO signals. This enables firmware programming, processor reset, and runtime debugging.
+
+OpenOCD (Open On-Chip Debugger) is an open-source tool that provides on-chip debugging, in-system programming, and boundary-scan testing for embedded targets. It acts as a bridge between a debug probe (such as J-Link, ST-Link, or CMSIS-DAP compatible adapters) and a higher-level debugger or programming tool.
+
+```
+source ~/zephyrproject/.venv/bin/activate
+west build -b nucleo_g491re zephyr/samples/basic/blinky
+west flash
+```
+
+---
+
+## Hardware validation (Renesas)
 
 The Blinky application was built and flashed on a Renesas EK-RA6B1 evaluation board.
 
