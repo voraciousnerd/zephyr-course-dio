@@ -12,8 +12,8 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-	model = "STMicroelectronics STM32G491RE-NUCLEO board";
-	compatible = "st,stm32g491re-nucleo";
+	model = "My Board";
+	compatible = "custom,myboard";
 
 	chosen {
 		zephyr,console = &lpuart1;
