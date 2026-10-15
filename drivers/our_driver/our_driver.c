@@ -4,6 +4,7 @@
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
+#include <our_drivers/our_driver.h>
 
 LOG_MODULE_REGISTER(our_driver, CONFIG_SENSOR_LOG_LEVEL);
 
@@ -13,6 +14,7 @@ struct our_driver_config {
 
 struct our_driver_data {
 	bool led_on;               /* runtime state */
+	uint32_t hold_ms; 
 };
 
 /* sample_fetch: turns the LED ON */
@@ -51,11 +53,27 @@ static int our_driver_channel_get(const struct device *dev,
 	val->val1 = data->led_on ? 1 : 0;
 	val->val2 = 0;
 
+	if (data->hold_ms > 0) {
+   		k_msleep(data->hold_ms);
+	}
+
 	ret = gpio_pin_set_dt(&cfg->led, 0);
 	if (ret < 0) {
 		return ret;
 	}
 	data->led_on = false;
+	return 0;
+}
+
+int our_driver_set_hold_ms(const struct device *dev, uint32_t hold_ms)
+{
+	struct our_driver_data *data = dev->data; 
+
+	if (dev == NULL) {
+		return -EINVAL;
+	}
+	data = dev->data;
+	data->hold_ms = hold_ms;
 	return 0;
 }
 
