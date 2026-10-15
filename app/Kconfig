@@ -1,4 +1,4 @@
-qconfig APP_HEARTBEAT_PERIOD_MS
+config APP_HEARTBEAT_PERIOD_MS
     int "Heartbeat Period (ms)"
     range 100 2000
     default 500
@@ -6,3 +6,4 @@ qconfig APP_HEARTBEAT_PERIOD_MS
       Delay in milliseconds between LED toggles.
 
 source "Kconfig.zephyr"
+source "drivers/our_driver/Kconfig"

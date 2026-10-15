@@ -1,0 +1,8 @@
+config OUR_DRIVER
+	bool "Enable Our Driver"
+	default y
+	depends on DT_HAS_OUR_DRIVER_ENABLED
+	depends on SENSOR
+	select GPIO
+	help
+	  Enable our simple LED driver.
