@@ -1,0 +1,7 @@
+/ {
+	our_led: our_led {
+		compatible = "our,driver";
+		led = <&green_led>;
+		status = "okay";
+	};
+};
