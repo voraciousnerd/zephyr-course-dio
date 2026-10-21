@@ -16,7 +16,7 @@ int main(void)
 		return -ENODEV;
 	}
 
-	uint32_t hold = 100; 
+	uint32_t hold = 2000; 
 
 	while (1) {
 		our_driver_set_hold_ms(dev, hold);

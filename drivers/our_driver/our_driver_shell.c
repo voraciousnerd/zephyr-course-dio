@@ -92,6 +92,46 @@ static int cmd_sensor_info(const struct shell *sh, size_t argc, char **argv)
 	return 0;
 }
 
+/* ---------- Task 2 ---------- */
+
+static int cmd_sensor_set(const struct shell *sh, size_t argc, char **argv)
+{
+	int err = 0;
+
+	/* SHELL_CMD_ARG already enforces this, kept as a safety net */
+	if (argc < 2) {
+		shell_error(sh, "Missing argument. Usage: sensor set <hold_ms>");
+		return -EINVAL;
+	}
+
+	if (check_ready(sh)) {
+		return -ENODEV;
+	}
+
+	long value = shell_strtol(argv[1], 10, &err);
+
+	if (err) {
+		shell_error(sh, "'%s' is not a valid number", argv[1]);
+		return -EINVAL;
+	}
+
+	if (value < HOLD_MS_MIN || value > HOLD_MS_MAX) {
+		shell_error(sh, "hold_ms %ld out of range (%d..%d)",
+			    value, HOLD_MS_MIN, HOLD_MS_MAX);
+		return -ERANGE;
+	}
+
+	int ret = our_driver_set_hold_ms(sensor_dev, (uint32_t)value);
+
+	if (ret < 0) {
+		shell_error(sh, "our_driver_set_hold_ms failed: %d", ret);
+		return ret;
+	}
+
+	shell_print(sh, "hold_ms set to %ld", value);
+	return 0;
+}
+
 /* ---------- Registration ---------- */
 
 SHELL_STATIC_SUBCMD_SET_CREATE(
@@ -100,6 +140,8 @@ SHELL_STATIC_SUBCMD_SET_CREATE(
 	SHELL_CMD(read, NULL, "Read channel (LED off after hold)", cmd_sensor_read),
 	SHELL_CMD(info, NULL, "Show device name and ready state", cmd_sensor_info),
 	/* mandatory = 2 (the word "set" + <hold_ms>), optional = 0 */
+	SHELL_CMD_ARG(set, NULL, "Set hold time: sensor set <hold_ms>",
+		      cmd_sensor_set, 2, 0),
 	SHELL_SUBCMD_SET_END);
 
 SHELL_CMD_REGISTER(sensor, &sub_sensor, "Sensor driver commands", NULL);
