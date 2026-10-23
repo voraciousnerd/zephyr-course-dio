@@ -1,0 +1,22 @@
+NSI/native/src/irq_ctrl.o: \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator//native/src/irq_ctrl.c \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/nsi_internal.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_utils.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_cpu_if.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_cpu_if_internal.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_utils.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/native/src/include/nsi_cpu0_interrupts.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/native/src/include/irq_ctrl.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_tasks.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_hws_models_if.h \
+ /home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_hw_scheduler.h
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/nsi_internal.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_utils.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_cpu_if.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_cpu_if_internal.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_utils.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/native/src/include/nsi_cpu0_interrupts.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/native/src/include/irq_ctrl.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_tasks.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_hws_models_if.h:
+/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include/nsi_hw_scheduler.h:

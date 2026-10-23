@@ -1,0 +1,57 @@
+cmake:
+  application:
+    configuration-dir: '/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf'
+    source-dir: '/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf'
+  board:
+    name: 'native_sim'
+    path:
+     - '/home/Orion/zephyrproject/zephyr/boards/native/native_sim'
+    qualifiers: 'native'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/Orion/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/Orion/zephyrproject/zephyr/boards/native/native_sim/native_sim.dts'
+    include-dirs:
+     - '/home/Orion/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/Orion/zephyrproject/modules/hal/atmel/include'
+     - '/home/Orion/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/Orion/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/Orion/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/Orion/zephyrproject/modules/hal/infineon/dts'
+     - '/home/Orion/zephyrproject/modules/hal/microchip/include'
+     - '/home/Orion/zephyrproject/modules/hal/microchip/dts'
+     - '/home/Orion/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/Orion/zephyrproject/modules/hal/nxp/dts'
+     - '/home/Orion/zephyrproject/modules/hal/stm32/dts'
+     - '/home/Orion/zephyrproject/modules/hal/ti/dts'
+     - '/home/Orion/zephyrproject/zephyr/include'
+     - '/home/Orion/zephyrproject/zephyr/include/zephyr'
+     - '/home/Orion/zephyrproject/zephyr/dts/common'
+     - '/home/Orion/zephyrproject/zephyr/dts/vendor'
+     - '/home/Orion/zephyrproject/zephyr/dts/tricore'
+     - '/home/Orion/zephyrproject/zephyr/dts/rx'
+     - '/home/Orion/zephyrproject/zephyr/dts/x86'
+     - '/home/Orion/zephyrproject/zephyr/dts/xtensa'
+     - '/home/Orion/zephyrproject/zephyr/dts/sparc'
+     - '/home/Orion/zephyrproject/zephyr/dts/riscv'
+     - '/home/Orion/zephyrproject/zephyr/dts/posix'
+     - '/home/Orion/zephyrproject/zephyr/dts/arm64'
+     - '/home/Orion/zephyrproject/zephyr/dts/arm'
+     - '/home/Orion/zephyrproject/zephyr/dts/arc'
+     - '/home/Orion/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/Orion/zephyrproject/zephyr/boards/native/native_sim/native_sim_defconfig'
+     - '/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf/prj.conf'
+     - '/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - '/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'host'
+    path: ''
+  zephyr:
+    version: '4.5.0-rc1'
+    zephyr-base: '/home/Orion/zephyrproject/zephyr'
+version: '0.1.0'

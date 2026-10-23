@@ -1,0 +1,52 @@
+2026-10-23 04:04:23,839 - twister - INFO - Using Ninja..
+2026-10-23 04:04:23,862 - twister - INFO - Zephyr version: v4.5.0-rc1-413-gee3cfaf89a3e
+2026-10-23 04:04:23,867 - twister - DEBUG - Running cmake script /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:04:23,868 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:04:24,364 - twister - DEBUG - Finished running /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:04:24,681 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-23 04:04:26,928 - twister - DEBUG - Reading testsuite configuration files under /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf...
+2026-10-23 04:04:26,928 - twister - DEBUG - Found possible testsuite in /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf
+2026-10-23 04:04:26,933 - twister - DEBUG - No duplicates found.
+2026-10-23 04:04:26,934 - twister - DEBUG -  platform filter: ['native_sim']
+2026-10-23 04:04:26,934 - twister - DEBUG - platform_pattern: []
+2026-10-23 04:04:26,934 - twister - DEBUG -    vendor filter: []
+2026-10-23 04:04:26,934 - twister - DEBUG -      arch_filter: None
+2026-10-23 04:04:26,934 - twister - DEBUG -       tag_filter: None
+2026-10-23 04:04:26,934 - twister - DEBUG -      exclude_tag: None
+2026-10-23 04:04:26,934 - twister - DEBUG - Checking platform filter: ['native_sim']
+2026-10-23 04:04:26,934 - twister - INFO - Building initial testsuite list...
+2026-10-23 04:04:26,935 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-23 04:04:26,935 - twister - INFO - Writing JSON report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/testplan.json
+2026-10-23 04:04:26,964 - twister - INFO - JOBS: 16
+2026-10-23 04:04:26,965 - twister - INFO - Adding tasks to the queue...
+2026-10-23 04:04:26,965 - twister - DEBUG - adding native_sim/native/host/gnu/homework.unit.ring_buf
+2026-10-23 04:04:26,967 - twister - INFO - Added initial list of jobs to queue
+2026-10-23 04:04:26,980 - twister - DEBUG - Running cmake on /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf for native_sim/native
+2026-10-23 04:04:26,982 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf -DTC_RUNID=2da38273dc9ae8e82102a647147a1102 -DTC_NAME=homework.unit.ring_buf -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DCONFIG_DEPRECATED_KCONFIGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/Orion/zephyrproject/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf -DBOARD=native_sim/native
+2026-10-23 04:04:27,052 - twister - DEBUG - Launched 16 jobs
+2026-10-23 04:04:35,164 - twister - DEBUG - Finished running cmake /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf for native_sim/native in 8.18 seconds
+2026-10-23 04:04:35,169 - twister - DEBUG - build test: native_sim/native/host/gnu/homework.unit.ring_buf
+2026-10-23 04:04:35,169 - twister - DEBUG - Building /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf for native_sim/native
+2026-10-23 04:04:35,170 - twister - DEBUG - Running /usr/bin/cmake --build /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf
+2026-10-23 04:04:37,285 - twister - INFO - 1/1 native_sim/native         homework.unit.ring_buf                             [31mERROR[39m Build failure (native <host/gnu>)
+2026-10-23 04:04:37,285 - twister - ERROR - see: [33m/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/build.log[39m
+2026-10-23 04:04:37,297 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-23 04:04:37,309 - twister - INFO - [32m0 of 1[39m executed test configurations passed (0.00%), 0 built (not run), 0 failed, [31m1[39m errored, with no warnings in 13.47 seconds.
+2026-10-23 04:04:37,309 - twister - INFO - 0 of 8 executed test cases passed (0.00%), 8 blocked on 1 out of total 1784 platforms (0.06%).
+2026-10-23 04:04:37,309 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m1[39m test configurations were only built.
+2026-10-23 04:04:37,310 - twister - INFO - Saving reports...
+2026-10-23 04:04:37,310 - twister - INFO - Writing JSON report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister.json
+2026-10-23 04:04:37,312 - twister - INFO - Writing xunit report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister.xml...
+2026-10-23 04:04:37,314 - twister - INFO - Writing xunit report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister_report.xml...
+2026-10-23 04:04:37,317 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-23 04:04:37,317 - twister - INFO - The following issues were found (showing the top 10 items):
+2026-10-23 04:04:37,317 - twister - INFO - 1) homework.unit.ring_buf on native_sim/native (host/gnu) error (Build failure - error: gnu/stubs-32.h: No such file or directory)
+2026-10-23 04:04:37,318 - twister - INFO - 
+2026-10-23 04:04:37,318 - twister - INFO - To rerun the tests, call twister using the following commandline:
+2026-10-23 04:04:37,318 - twister - INFO - west twister -p <PLATFORM> -s <TEST ID>, for example:
+2026-10-23 04:04:37,318 - twister - INFO - 
+2026-10-23 04:04:37,318 - twister - INFO - west twister -p native_sim/native -s homework.unit.ring_buf
+2026-10-23 04:04:37,318 - twister - INFO - or with west:
+2026-10-23 04:04:37,318 - twister - INFO - west build -p -b native_sim/native tests/ring_buf -T homework.unit.ring_buf
+2026-10-23 04:04:37,318 - twister - INFO - -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+2026-10-23 04:04:37,318 - twister - INFO - Run completed

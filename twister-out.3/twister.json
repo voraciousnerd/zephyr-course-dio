@@ -1,0 +1,89 @@
+{
+    "environment":{
+        "os":"Linux",
+        "zephyr_version":"v4.5.0-rc1-413-gee3cfaf89a3e",
+        "toolchain":"zephyr/gnu",
+        "commit_date":"2026-10-09T08:37:52+02:00",
+        "run_date":"2026-10-23T01:04:24+00:00",
+        "options":{
+            "help":null,
+            "zephyr_base":null,
+            "verbose":1,
+            "quiet":0,
+            "command":"twister",
+            "testsuite_root":[
+                "tests/ring_buf"
+            ],
+            "platform":[
+                "native_sim"
+            ]
+        }
+    },
+    "testsuites":[
+        {
+            "name":"homework.unit.ring_buf",
+            "arch":"posix",
+            "platform":"native_sim/native",
+            "path":"../zephyr-course-dio/tests/ring_buf",
+            "run_id":"2da38273dc9ae8e82102a647147a1102",
+            "runnable":true,
+            "retries":0,
+            "toolchain":"host/gnu",
+            "status":"error",
+            "log":"Loading Zephyr default modules (Zephyr base).\n-- Application: /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf\n-- CMake version: 4.3.0\n-- Found Python3: /home/Orion/zephyrproject/.venv/bin/python3 (found suitable version \"3.14.8\", minimum required is \"3.12\") found components: Interpreter\n-- Cache files will be written to: /home/Orion/.cache/zephyr\n-- Zephyr version: 4.5.0-rc1 (/home/Orion/zephyrproject/zephyr)\n-- Found west (found suitable version \"1.5.0\", minimum required is \"0.14.0\")\n-- Board: native_sim, qualifiers: native\n-- Found toolchain: host (gcc/ld)\n-- Found Dtc: /usr/bin/dtc (found suitable version \"1.8.1\", minimum required is \"1.4.6\")\n-- Found BOARD.dts: /home/Orion/zephyrproject/zephyr/boards/native/native_sim/native_sim.dts\n-- Generated zephyr.dts: /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/zephyr.dts\n-- Generated pickled edt: /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/edt.pickle\n-- Generated devicetree_generated.h: /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/devicetree_generated.h\nParsing /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf/Kconfig\nLoaded configuration '/home/Orion/zephyrproject/zephyr/boards/native/native_sim/native_sim_defconfig'\nMerged configuration '/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf/prj.conf'\nMerged configuration '/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'\nConfiguration saved to '/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/.config'\nKconfig header saved to '/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h'\n-- Found Ccache: /usr/bin/ccache (found suitable version \"4.12.3\", minimum required is \"4.12\")\n-- Found GnuLd: /usr/bin/ld.bfd (found version \"\")\n-- The C compiler identification is GNU 16.2.1\n-- The CXX compiler identification is GNU 16.2.1\n-- The ASM compiler identification is GNU\n-- Found assembler: /usr/lib64/ccache/gcc\nCMake Warning at /home/Orion/zephyrproject/zephyr/subsys/random/CMakeLists.txt:12 (message):\n\n\n      Warning: CONFIG_TIMER_RANDOM_GENERATOR and CONFIG_TEST_CSPRNG_GENERATOR are\n      not truly random generators. This capability is not secure and it is\n      provided for testing purposes only. Use it carefully.\n\n\n-- Using ccache: /usr/bin/ccache\n-- Found gen_kobject_list: /home/Orion/zephyrproject/zephyr/scripts/build/gen_kobject_list.py\n-- Configuring done (7.4s)\n-- Generating done (0.3s)\nCMake Warning:\n  Manually-specified variables were not used by the project:\n\n    TC_NAME\n\n\n-- Build files have been written to: /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf\nninja: warning: Ignoring jobserver: Pipe-based protocol is not supported! [ -j16 --jobserver-auth=8,9]\n[1/114] Preparing syscall dependency handling\n\n[2/114] Generating include/generated/zephyr/version.h\n-- Zephyr version: 4.5.0-rc1 (/home/Orion/zephyrproject/zephyr), build: v4.5.0-rc1-413-gee3cfaf89a3e\n[3/114] Generating misc/generated/syscalls_subdirs.trigger\n[4/114] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json\n[5/114] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake\n[6/114] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h\n[7/114] Generating include/generated/zephyr/driver-validation.h\n[8/114] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h\n[9/114] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj\nFAILED: [code=1] zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj \n/usr/bin/ccache /usr/lib64/ccache/gcc -DK_HEAP_MEM_POOL_SIZE=0 -DTC_RUNID=2da38273dc9ae8e82102a647147a1102 -D__ZEPHYR__=1 -I/home/Orion/zephyrproject/zephyr/kernel/include -I/home/Orion/zephyrproject/zephyr/arch/common/include -I/home/Orion/zephyrproject/zephyr/include -I/home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated -I/home/Orion/zephyrproject/zephyr/soc/native/inf_clock -I/home/Orion/zephyrproject/zephyr/boards/native/native_sim -I/home/Orion/zephyrproject/zephyr/scripts/native_simulator/common/src/include -I/home/Orion/zephyrproject/zephyr/scripts/native_simulator/native/src/include -I/home/Orion/zephyrproject/zephyr/subsys/testsuite/include -I/home/Orion/zephyrproject/zephyr/subsys/testsuite/coverage -I/home/Orion/zephyrproject/zephyr/subsys/testsuite/ztest/include -Wshadow -fno-strict-aliasing -Werror -Os -imacros /home/Orion/zephyrproject/zephyr-course-dio/twister-out/native_sim_native/host_gnu/zephyr-course-dio/tests/ring_buf/homework.unit.ring_buf/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -fdiagnostics-color=always -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/Orion/zephyrproject/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/Orion/zephyrproject=WEST_TOPDIR -ffunction-sections -fdata-sections -m32 -msse2 -mfpmath=sse -fvisibility=hidden -fno-freestanding -std=c17 -fno-lto -MD -MT zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj -MF zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj.d -o zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj -c /home/Orion/zephyrproject/zephyr/lib/heap/heap_constants.c\nIn file included from /usr/include/features.h:564,\n                 from /usr/include/bits/libc-header-start.h:33,\n                 from /usr/include/stdint.h:26,\n                 from /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h:11,\n                 from /home/Orion/zephyrproject/zephyr/include/zephyr/types.h:11,\n                 from /home/Orion/zephyrproject/zephyr/include/zephyr/sys/util.h:28,\n                 from /home/Orion/zephyrproject/zephyr/lib/heap/heap_constants.c:32:\n/usr/include/gnu/stubs.h:7:11: fatal error: gnu/stubs-32.h: No such file or directory\n    7 | # include <gnu/stubs-32.h>\n      |           ^~~~~~~~~~~~~~~~\ncompilation terminated.\nninja: build stopped: subcommand failed.\n",
+            "reason":"Build failure - error: gnu/stubs-32.h: No such file or directory",
+            "execution_time":"0.00",
+            "build_time":"10.29",
+            "testcases":[
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.single_push_pop",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.fifo_order",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.pop_null_returns_einval",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.is_full_after_fill",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_push_pop.push_full_returns_enospc",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_init.fresh_state",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_init.reinit_clears_state",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                },
+                {
+                    "identifier":"homework.unit.ring_buf.ring_buf_boundaries.peek_does_not_consume",
+                    "execution_time":"0.00",
+                    "status":"blocked",
+                    "reason":"Build failure"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+2026-10-23 04:05:33,128 - twister - INFO - Using Ninja..
+2026-10-23 04:05:33,157 - twister - INFO - Zephyr version: v4.5.0-rc1-413-gee3cfaf89a3e
+2026-10-23 04:05:33,166 - twister - DEBUG - Running cmake script /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:05:33,167 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:05:33,781 - twister - DEBUG - Finished running /home/Orion/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-23 04:05:34,815 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-23 04:05:37,212 - twister - DEBUG - Reading testsuite configuration files under /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf...
+2026-10-23 04:05:37,213 - twister - DEBUG - Found possible testsuite in /home/Orion/zephyrproject/zephyr-course-dio/tests/ring_buf
+2026-10-23 04:05:37,218 - twister - DEBUG - No duplicates found.
+2026-10-23 04:05:37,218 - twister - DEBUG -  platform filter: ['native_sim/native/64']
+2026-10-23 04:05:37,219 - twister - DEBUG - platform_pattern: []
+2026-10-23 04:05:37,219 - twister - DEBUG -    vendor filter: []
+2026-10-23 04:05:37,219 - twister - DEBUG -      arch_filter: None
+2026-10-23 04:05:37,219 - twister - DEBUG -       tag_filter: None
+2026-10-23 04:05:37,219 - twister - DEBUG -      exclude_tag: None
+2026-10-23 04:05:37,219 - twister - DEBUG - Checking platform filter: ['native_sim/native/64']
+2026-10-23 04:05:37,219 - twister - INFO - Building initial testsuite list...
+2026-10-23 04:05:37,219 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-23 04:05:37,220 - twister - INFO - Writing JSON report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/testplan.json
+2026-10-23 04:05:37,257 - twister - INFO - JOBS: 16
+2026-10-23 04:05:37,257 - twister - INFO - Adding tasks to the queue...
+2026-10-23 04:05:37,258 - twister - INFO - Added initial list of jobs to queue
+2026-10-23 04:05:37,342 - twister - DEBUG - Launched 16 jobs
+2026-10-23 04:05:37,355 - twister - INFO - 1 test scenarios (1 configurations) selected, 1 configurations filtered (1 by static filter, 0 at runtime).
+2026-10-23 04:05:37,365 - twister - INFO - [32m0 of 0[39m executed test configurations passed (0.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 4.24 seconds.
+2026-10-23 04:05:37,366 - twister - INFO - 0 of 0 executed test cases passed (0.00%) on 0 out of total 1784 platforms (0.00%).
+2026-10-23 04:05:37,366 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-23 04:05:37,366 - twister - INFO - Saving reports...
+2026-10-23 04:05:37,366 - twister - INFO - Writing JSON report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister.json
+2026-10-23 04:05:37,367 - twister - INFO - Writing xunit report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister.xml...
+2026-10-23 04:05:37,369 - twister - INFO - Writing xunit report /home/Orion/zephyrproject/zephyr-course-dio/twister-out/twister_report.xml...
+2026-10-23 04:05:37,370 - twister - INFO - Run completed
